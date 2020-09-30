@@ -1,3 +1,23 @@
+/*Styling the Game*/
+html {
+  background: linear-gradient(#13547a, #80d0c7);
+}
+#container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#game {
+  text-align: center;
+}
+
+#title {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  color: rgb(11, 194, 11);
+  text-shadow: 2px 2px black;
+}
+
 /* game board table */
 
 #board td {
@@ -10,7 +30,9 @@
 
 #board {
   border: 2px solid black;
-  background: linear-gradient(#13547a, #80d0c7);
+  background: linear-gradient(#59c2ff, #6cafa7);
+  margin: 50px auto;
+  border-radius: 5px;
 }
 
 /* pieces are div within game table cells: draw as colored circles */
@@ -23,6 +45,7 @@
 }
 
 /*Changing into the players colors*/
+
 .piece.p1 {
   animation: slideDown 1s;
   background-color: blue;
@@ -62,7 +85,8 @@
 }
 @keyframes slideDown {
   from {
-    margin-top: -400px;
+    margin-top: -200px;
+    opacity: 0.5;
   }
   to {
   }
