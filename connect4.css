@@ -1,5 +1,7 @@
 /*Styling the Game*/
 html {
+  width: 100%;
+  height: 100%;
   background: linear-gradient(#13547a, #80d0c7);
 }
 #container {
